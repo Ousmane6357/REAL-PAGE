@@ -1,0 +1,335 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    scroll-behavior: smooth;
+}
+
+
+.body{
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1200%;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;
+}
+
+.header{
+    height: 100vh;
+    background-image: linear-gradient(to top, rgba(161, 140, 209, 0.603) 0%, #fbc2eb9b 100%), url(salonsejour_meublesalon_livingmeublesurmesure.webp) ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    
+}
+
+.head{
+    
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+    color:aliceblue
+    
+}
+
+.casa{
+    position: fixed;
+    top: 50px;
+    width: 40px;
+    background-color: antiquewhite;
+    height: 30px;
+    
+    border-radius: 50px;
+    position: relative;
+    left: 95%;
+    cursor: pointer;
+    box-shadow: 0 0 6px;
+
+}
+
+.menu-navegacion{
+
+    top: 80px;
+    z-index: 10;
+    left: 90%;
+    position: fixed;
+    box-shadow: 0 0 5px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    transform:translate(110%) ;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 10vw;
+    transition: transform .3s ease-in-out;
+    background-color: rgba(137, 43, 226, 0.6);
+    
+
+}
+
+.spread{
+    transform: translate(0);
+}
+
+.menu-navegacion{
+    
+    text-decoration: none;
+}
+
+.titulo{
+    font-size: 70px;
+    
+    margin-bottom: 10px;
+
+}
+
+.copy{
+    font: weight 300px; ;
+    font-size: 30px;
+}
+
+.subtitulo{
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 900;
+    font-size: 30px;
+    color: rgb(141, 83, 13)
+
+}
+
+.contenedor-servicio{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.contenedor-servicio img{
+    width: 45%;
+}
+
+.checklist-servicio{
+    width: 50%;
+}
+
+.Service{
+    margin-bottom: 30px;
+
+}
+
+.n-service{
+    color: burlywood;
+    margin-bottom: 20px;
+
+}
+
+.number{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: brown;
+    border-radius: 50%;
+    text-align: center;
+    font-weight: normal;
+    margin-right: 5px;
+
+}
+
+.gallery{
+    background-color:cadetblue;
+}
+
+.contenedor-galeria{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.img-galeria{
+    object-fit: cover;
+    display: block;
+    cursor: pointer;
+    margin-bottom: 15px;
+    width: 30%;
+    box-shadow: 0 0 6px rgba(0, 0, 0,5);
+}
+
+.imagen-light{
+    position: fixed;
+    background: rgba(0, 0, 0, 5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(100%);
+    transform: transform .2s ease-in-out ;
+    
+}
+
+
+
+.agregar-imagen{
+
+    width: 60%;
+    border-radius: 10%;
+    transform: scale(0);
+    transition: trasnform .3s .2s;
+}
+
+.close{
+    position: absolute;
+    top: 15px;
+    cursor: pointer;
+    width: 40px;
+    right: 15px;
+}
+
+.show{
+    transform: translate(0);
+}
+
+.showImage{
+    transform: scale(1);
+}
+
+.experts{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.cont-expert{
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cont-expert img{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+footer{
+    background-color: blanchedalmond;
+    padding-bottom: 0.1px;
+}
+
+.footer-content{
+    display: flex;
+    color: blue;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.contact-us{
+    width: 40%;
+    color: rgb(2, 19, 19);
+}
+
+.brand{
+    font-weight: 500;
+    font-size: 30px;
+
+}
+
+.brand+p{
+    font-weight: 500;
+
+}
+
+.social-media{
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.social-media-icon{
+    display: inline-block;
+    margin-left: 20px;
+    width: 40px;
+    height:40px ;
+    border-radius: 50%;
+    text-align: center;
+    border: 1px solid;
+    color: cadetblue;
+    
+
+
+
+}
+
+.social-media-icon:hover{
+    color: aqua;
+    background-color: blue;
+    justify-content: center;
+    display: flex;
+
+    
+}
+
+.social-media-icon i{
+    font-size: 40px;
+}
+
+/*@media only screen and (max-width: 500px){
+    .menu-navegacion{
+        width: 50vh;
+    }
+    .titulo{
+        font-size: 40px;
+    }
+    .contenedor-servicio img{
+        width: 80%;
+        margin-bottom: 40px;
+
+    }
+
+    .checklist-servicio{
+        width: 80%;
+    }
+
+    .service{
+        margin-bottom: 30px;
+    }
+
+    .agregar-imagen{
+        width: 80%;
+    }
+
+    .img-galeria{
+        width: 45%;
+    }
+
+    .cont-expert{
+        width: 80%;
+    }
+
+
+
+
+}*/
+
+
+
+
